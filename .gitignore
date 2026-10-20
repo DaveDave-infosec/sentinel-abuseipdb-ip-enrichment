@@ -1,0 +1,10 @@
+# Never commit credentials or exported definitions with embedded API keys
+.env
+.env.*
+!.env.example
+*secret*
+*credential*
+*api-key*
+*apikey*
+*.pfx
+*.pem
