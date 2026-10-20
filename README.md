@@ -90,6 +90,24 @@ Screenshots are captured locally and will be uploaded to the `screenshots/` fold
 | Readable AbuseIPDB incident report after manual rerun | [03-formatted-abuseipdb-report.png](screenshots/03-formatted-abuseipdb-report.png) |
 | Automation rule disabled following testing | [04-automation-rule-disabled.png](screenshots/04-automation-rule-disabled.png) |
 
+### Screenshots — observed lab evidence
+
+**1. Automated incident enrichment (original JSON response)**
+
+![Microsoft Sentinel incident activity showing automatically added AbuseIPDB response](screenshots/01-abuseipdb-incident-comment.png)
+
+**2. Successful Azure Logic Apps run**
+
+![Logic App run history showing successful execution](screenshots/02-playbook-successful-run.png)
+
+**3. SOC-friendly formatted IP reputation comment (manual rerun)**
+
+![Formatted AbuseIPDB incident report after manual playbook execution](screenshots/03-formatted-abuseipdb-report.png)
+
+**4. Automation rule disabled after validation**
+
+![Microsoft Sentinel automation dashboard showing zero enabled rules](screenshots/04-automation-rule-disabled.png)
+
 ## Security notes
 
 - **No API credentials are committed to this repository.** The AbuseIPDB `Key` header is a secret and should not appear in screenshots, exported Logic App definitions, or source control.
